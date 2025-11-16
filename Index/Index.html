@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type"image/icon">
+    <title>Construye tu PC</title>
+</head>
+<body>
+    <header>
+        <h1>Construye tu PC</h1>
+    </header>
+    <div>
+        <h2>Selecciona tu procesador</h2>
+  <label for="cpuSelect">Procesador:</label>
+  <select id="cpuSelect" onchange="mostrarSeleccionCPU()">
+    <option value="">-- Elige una opción --</option>
+    <option value="intel_i3">Intel Core i3</option>
+    <option value="intel_i5">Intel Core i5</option>
+    <option value="intel_i7">Intel Core i7</option>
+    <option value="ryzen_3">AMD Ryzen 3</option>
+    <option value="ryzen_5">AMD Ryzen 5</option>
+    <option value="ryzen_7">AMD Ryzen 7</option>
+    <option value="ryzen_9">AMD Ryzen 9</option>
+  </select>
+        <h2>Selecciona tu grafica</h2>
+  <label for="cpuSelect">Grafica:</label>
+  <select id="cpuSelect" onchange="mostrarSeleccionCPU()">
+    <option value="">-- Elige una opción --</option>
+    <option value="RTX_5">RTX 5000</option>
+    <option value="RTX_4">RTX 4000</option>
+    <option value="RTX_3">RTX 3000</option>
+    <option value="RTX_2">RTX 2000</option>
+    <option value="RX_7">RX 7000</option>
+    <option value="RX_6">RX 6000</option>
+    <option value="RX_5">RX 5000</option>
+  </select>
+        <h2>Selecciona tu RAM</h2>
+  <label for="cpuSelect">RAM:</label>
+  <select id="cpuSelect" onchange="mostrarSeleccionCPU()">
+    <option value="">-- Elige una opción --</option>
+    <option value="DDR5_1">DDR5 64GB 5000 GHz</option>
+    <option value="DDR5_2">DDR5 32GB 4000 GHz</option>
+    <option value="DDR5_3">DDR5 16GB 3200GHz </option>
+    <option value="DDR4_1">DDR4 64GB 5000 GHz</option>
+    <option value="DDR4_2">DDR4 32GB 4000 GHz</option>
+    <option value="DDR4_3">DDR4 32GB 3200GHz</option>
+    <option value="DDR4_4">DDR4 16GB 3200GHz</option>
+  </select>
+        <h2>Selecciona tu Placa Base</h2>
+  <label for="cpuSelect">Placa Base:</label>
+  <select id="cpuSelect" onchange="mostrarSeleccionCPU()">
+    <option value="">-- Elige una opción --</option>
+    <option value="Placa_1">ASUS ROG Strix Z790-E Gaming WiFi II</option>
+    <option value="Placa_2">MSI MAG B760 Tomahawk WiFi</option>
+    <option value="Placa_3">Gigabyte Z790 AORUS Master X</option>
+    <option value="Placa_4">ASUS TUF Gaming X670E-Plus WiFi</option>
+    <option value="Placa_5">MSI MAG B650 Tomahawk WiFi</option>
+    <option value="Placa_6">Gigabyte B650 AORUS Elite AX</option>
+    <option value="Placa_7">ASRock X670E Taichi Carrara</option>
+  </select>
+        <h2>Selecciona tu Almacenamiento</h2>
+  <label for="cpuSelect">Almacenamiento:</label>
+  <select id="cpuSelect" onchange="mostrarSeleccionCPU()">
+    <option value="">-- Elige una opción --</option>
+    <option value="intel_i3">4TB SSD M.2</option>
+    <option value="intel_i5">3TB SSD M.2</option>
+    <option value="intel_i7">2TB SSD M.2</option>
+    <option value="ryzen_3">1TB SSD M.2</option>
+    <option value="ryzen_5">4TB HDD</option>
+    <option value="ryzen_7">3TB HDD</option>
+    <option value="ryzen_9">2TB HDD</option>
+  </select>
+        <h2>Selecciona tu Caja</h2>
+  <label for="cpuSelect">Caja:</label>
+  <select id="cpuSelect" onchange="mostrarSeleccionCPU()">
+    <option value="">-- Elige una opción --</option>
+    <option value="intel_i3">Lian Li O11 Dynamic EVO XL</option>
+    <option value="intel_i5">Fractal Design North</option>
+    <option value="intel_i7">NZXT H7 Flow RGB</option>
+    <option value="ryzen_3">Cooler Master TD500 Mesh V2</option>
+    <option value="ryzen_5">Corsair 4000D Airflow</option>
+    <option value="ryzen_7">Thermaltake Core P3 TG Pro</option>
+    <option value="ryzen_9">Hyte Y70 Touch</option>
+  </select>
+        <h2>Selecciona tu fuente de alimentacion</h2>
+  <label for="cpuSelect">fuente de alimentacion:</label>
+  <select id="cpuSelect" onchange="mostrarSeleccionCPU()">
+    <option value="">-- Elige una opción --</option>
+    <option value="intel_i3">Corsair RM750x (2024)</option>
+    <option value="intel_i5">Be Quiet! Straight Power 12 850W</option>
+    <option value="intel_i7">Seasonic Focus GX-1000</option>
+    <option value="ryzen_3">Gigabyte GP-P750GM 750W</option>
+    <option value="ryzen_5">Corsair AX1600i</option>
+    <option value="ryzen_7">Xilence Performance X 850W</option>
+    <option value="ryzen_9">Cooler Master MWE Gold V2 650W</option>
+  </select>
+        <h2>Selecciona tu refrigeracion</h2>
+  <label for="cpuSelect">Refrigeracion:</label>
+  <select id="cpuSelect" onchange="mostrarSeleccionCPU()">
+    <option value="">-- Elige una opción --</option>
+    <option value="intel_i3">Corsair iCUE LINK TITAN 360 RX</option>
+    <option value="intel_i5">ARCTIC Liquid Freezer III Pro 360 A-RGB</option>
+    <option value="intel_i7">NZXT Kraken Elite 280 RGB</option>
+    <option value="ryzen_3">Mars Gaming MLPRO120</option>
+    <option value="ryzen_5">Noctua NH-D15 chromax.black</option>
+    <option value="ryzen_7">be quiet! Dark Rock Pro 5</option>
+    <option value="ryzen_9">DeepCool AK620 Digital</option>
+  </select>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>

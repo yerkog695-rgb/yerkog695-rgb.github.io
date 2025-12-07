@@ -1,0 +1,4 @@
+user-agent: *
+Disallow: /privado/
+Allow: /
+Sitemap: https://yerkog695-rgb.github.io/sitemap.xml

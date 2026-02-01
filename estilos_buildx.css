@@ -122,7 +122,6 @@ section h2::after {
   border-radius: 2px;
 }
 
-/* Listas */
 section li {
   list-style: none;
   margin: 1.5rem 0;
@@ -208,4 +207,5 @@ footer a:hover {
   color: #00ff87;
   background: rgba(255, 0, 128, 0.2);
 }
+
 

@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +21,10 @@ header {
   top: 0;
   z-index: 1000;
   border-bottom: 3px solid #00ff87;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 header h1 {
@@ -30,8 +33,46 @@ header h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-shadow: 0 0 20px rgba(255, 0, 128, 0.8),
-               0 0 40px rgba(121, 40, 202, 0.6);
+    0 0 40px rgba(121, 40, 202, 0.6);
   animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px rgba(255, 0, 128, 0.8), 0 0 40px rgba(121, 40, 202, 0.6);
+  }
+
+  to {
+    text-shadow: 0 0 30px rgba(255, 0, 128, 1), 0 0 60px rgba(121, 40, 202, 0.9);
+  }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px 10px;
+  z-index: 1100;
+  flex-shrink: 0;
+}
+
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #00ff87;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-toggle-input {
+  display: none;
 }
 
 nav ol {
@@ -66,12 +107,12 @@ nav ol li a:hover {
 
 
 .principal {
-  max-width: 1200px;
+  max-width: 1800px;
   margin: 2rem auto;
   padding: 0 2rem;
 }
 
-.principal > p {
+.principal>p {
   background: rgba(255, 255, 255, 0.05);
   padding: 1.5rem;
   border-left: 5px solid #ff0080;
@@ -143,7 +184,7 @@ section li a {
 }
 
 section li a::before {
-  
+
   margin-right: 0.5rem;
   font-size: 1.2rem;
 }
@@ -159,11 +200,8 @@ section li a:hover {
 section img {
   width: 150px;
   height: 150px;
-  object-fit: contain;
   background: rgba(255, 255, 255, 0.9);
-  padding: 1rem;
   border-radius: 15px;
-  margin: 1rem 0;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
@@ -173,6 +211,113 @@ section img:hover {
   box-shadow: 0 8px 25px rgba(255, 0, 128, 0.5);
 }
 
+.oferta1 {
+  display: inline-block;
+  width: 500px;
+  padding: 2rem;
+  margin: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 0, 128, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.imagen1 {
+  background-image: url("https://thumb.pccomponentes.com/w-150-150/articles/1099/10996367/1313-pccom-lite-amd-ryzen-5-8400f-16gb-1tb-ssd-rtx-5060-8gb-v2-comprar.jpg");
+  width: 300px;
+  height: 300px;
+}
+
+.oferta2 {
+  display: inline-block;
+  width: 500px;
+  padding: 2rem;
+  margin: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 0, 128, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.imagen2 {
+  background-image: url("https://thumb.pccomponentes.com/w-150-150/articles/1087/10877264/1431-asus-prime-geforce-rtx-5060-oc-edition-8gb-gddr7-reflex-2-rtx-ai-dlss4-6e68db44-5e64-4e3e-85c5-74b6242046be.jpg");
+  width: 300px;
+  height: 300px;
+}
+
+.oferta3 {
+  display: inline-block;
+  width: 500px;
+  padding: 2rem;
+  margin: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 0, 128, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.imagen3 {
+  background-image: url("https://www.coolmod.com/images/product/normal/PROD-042325_1.jpg?v=1774026286");
+  width: 300px;
+  height: 300px;
+}
+
+.oferta4 {
+  display: inline-block;
+  width: 500px;
+  padding: 2rem;
+  margin: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 0, 128, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.imagen4 {
+  background-image: url("https://www.coolmod.com/images/product/normal/PROD-039114_1.jpg?v=1774026286");
+  width: 300px;
+  height: 300px;
+}
+
+.oferta5 {
+  display: inline-block;
+  width: 500px;
+  padding: 2rem;
+  margin: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 0, 128, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.imagen5 {
+  background-image: url("https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_164930182?x=280&y=190&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=280&ey=190&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=280&cdy=190");
+  width: 300px;
+  height: 300px;
+}
+
+.oferta6 {
+  display: inline-block;
+  width: 500px;
+  padding: 2rem;
+  margin: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 0, 128, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.imagen6 {
+  background-image: url("https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_166440847?x=320&y=320&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=320&ey=320&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=320&cdy=320");
+  width: 300px;
+  height: 300px;
+}
 
 footer {
   background: linear-gradient(90deg, #0f0c29, #302b63);
@@ -208,4 +353,220 @@ footer a:hover {
   background: rgba(255, 0, 128, 0.2);
 }
 
+@media (max-width: 480px) {
 
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px 16px;
+    gap: 0;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+
+  label.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: transparent;
+    border: 2px solid #00ff87;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 8px 10px;
+  }
+
+  label.hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #00ff87;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  nav.Menu {
+    display: none;
+    width: 100%;
+    order: 3;
+    background: rgba(15, 12, 41, 0.97);
+    border-top: 1px solid rgba(0, 255, 135, 0.25);
+    border-radius: 0 0 12px 12px;
+  }
+
+  .menu-toggle-input:checked~nav.Menu {
+    display: block;
+  }
+
+  nav.Menu ol {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 6px 0;
+    list-style: none;
+  }
+
+  nav.Menu ol li {
+    display: block;
+    margin: 0;
+    border-left: 3px solid transparent;
+    transition: background 0.2s, border-color 0.2s;
+  }
+
+  nav.Menu ol li:hover {
+    background: rgba(0, 255, 135, 0.07);
+    border-left-color: #ff0080;
+  }
+
+  nav.Menu ol li a {
+    display: block;
+    padding: 13px 20px;
+    font-size: 0.88rem;
+    color: #00ff87;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    transform: none;
+    letter-spacing: 0.08em;
+  }
+
+  nav.Menu ol li a:hover {
+    background: transparent;
+    color: #ffffff;
+    transform: none;
+    box-shadow: none;
+  }
+
+  .principal {
+    padding: 12px 10px;
+    margin: 1rem auto;
+  }
+
+  .principal>p {
+    font-size: 0.82rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    padding: 1rem;
+  }
+
+  .ofertas article {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 1rem;
+  }
+
+  .oferta1,
+  .oferta2,
+  .oferta3,
+  .oferta4,
+  .oferta5,
+  .oferta6 {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 12px;
+    font-size: 0.82rem;
+  }
+
+  .imagen1,
+  .imagen2,
+  .imagen3,
+  .imagen4,
+  .imagen5,
+  .imagen6 {
+    width: 100%;
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 8px 0;
+  }
+
+  .oferta1 button,
+  .oferta2 button,
+  .oferta3 button,
+  .oferta4 button,
+  .oferta5 button,
+  .oferta6 button {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .gama-b article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 1rem;
+  }
+
+  .gama-b img {
+    width: 110px;
+    height: auto;
+  }
+
+  .marcas ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .marcas img {
+    width: 80px;
+    height: auto;
+  }
+
+  footer {
+    padding: 14px 12px;
+    font-size: 0.78rem;
+  }
+
+  footer h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  footer p,
+  footer a {
+    font-size: 0.78rem;
+  }
+
+  section h2 {
+    font-size: 1.3rem;
+  }
+
+  section img {
+    width: 80px;
+    height: 80px;
+  }
+
+  section li a {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}

@@ -20,6 +20,7 @@ body>a:focus{
   position: static;
 }
 
+
 header {
   background: linear-gradient(90deg, #ff0080, #7928ca, #ff0080);
   padding: 1.5rem 2rem;
@@ -227,7 +228,6 @@ section img:hover {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 0, 128, 0.3);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
 }
 
 .imagen1 {
@@ -245,7 +245,6 @@ section img:hover {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 0, 128, 0.3);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
 }
 
 .imagen2 {
@@ -263,7 +262,6 @@ section img:hover {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 0, 128, 0.3);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
 }
 
 .imagen3 {

@@ -259,10 +259,10 @@
 
 <body>
   <a href="#principal" tabindex="1">Ir al contenido</a>
-  <header>
+  <header role="banner">
     <h1>🎮 BuildX</h1>
 
-    <input type="checkbox" id="menu-toggle" class="menu-toggle-input">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-input" aria-controls="menu-principal">
 
     <label for="menu-toggle" class="hamburger" aria-label="Abrir menú">
       <span></span>
@@ -270,7 +270,7 @@
       <span></span>
     </label>
 
-    <nav class="Menu" id="menu-principal">
+    <nav class="Menu" id="menu-principal" role="navigation">
       <ol>
         <li><a href="index2.html" tabindex="2">Componentes</a></li>
         <li><a href="perifericos.html" tabindex="3">Periféricos</a></li>
@@ -291,7 +291,7 @@
           <div class="descuentos">
             <span class="oferta"></span>
           </div>
-          <div class="imagen1"></div>
+          <div class="imagen1" role="img" aria-label="Imagen de ordenador de sobremesa"></div>
           <p>PcCom Lite AMD Ryzen 5 8400F / 16GB / 1TB SSD / RTX 5060 8GB V2</p>
           <div>
             <span>969,00€</span>
@@ -312,7 +312,7 @@
           <div class="descuentos">
             <span class="oferta"></span>
           </div>
-          <div class="imagen2"></div>
+          <div class="imagen2" role="img" aria-label="Imagen de Tarjeta grafica"></div>
           <p>Tarjeta Gráfica ASUS PRIME GeForce RTX 5060 OC Edition 8GB GDDR7 Reflex 2 RTX AI DLSS4</p>
           <div>
             <span>335,85€</span>
@@ -333,7 +333,7 @@
           <div class="descuentos">
             <span class="oferta"></span>
           </div>
-          <div class="imagen3"></div>
+          <div class="imagen3" role="img" aria-label="Imagen de ordenador de sobremesa"></div>
           <p>COOLPC Gamer Friday VIII - Ryzen 7 7800X3D / GeForce RTX 5070 Ti 16GB / 32GB DDR5 / SSD 2TB / W11</p>
           <div>
             <span>2.699,95€</span>
@@ -354,7 +354,7 @@
           <div class="descuentos">
             <span class="oferta"></span>
           </div>
-          <div class="imagen4"></div>
+          <div class="imagen4" role="img" aria-label="Imagen de memoria Ram"></div>
           <p>Memoria DDR5 Corsair Vengeance RGB 32GB 2x16GB 6000MHz CL38 XMP Negro</p>
           <div>
             <span>399,95€</span>
@@ -375,7 +375,7 @@
           <div class="descuentos">
             <span class="oferta"></span>
           </div>
-          <div class="imagen5"></div>
+          <div class="imagen5" role="img" aria-label="imagen de ordenador portatil"></div>
           <p>Portátil gaming - HP OMEN Slim 16-an0009ns, 16" 2K, Intel® Core™ Ultra 7 255H, 24GB RAM, 1TB SSD, GeForce
             RTX™ 5060, Sin sistema operativo , Negro</p>
           <div>
@@ -397,7 +397,7 @@
           <div class="descuentos">
             <span class="oferta"></span>
           </div>
-          <div class="imagen6"></div>
+          <div class="imagen6" role="img" aria-label="Imagen de ordenador de sobremesa"></div>
           <p>PC Gaming - GREED MK2 AMD | Gaming Ordenador / Computer, AMD Ryzen 7 5700X, 32 GB RAM, 1000 GB SSD, GeForce
             RTX™ 5060, Windows 11 Pro, Negro</p>
           <div>
@@ -420,9 +420,9 @@
     <section class="gama-b">
       <article>
         <h2>Tiendas Online</h2>
-        <li><a href="https://www.pccomponentes.com" target="_blank">PCComponentes</a></li>
+        <li ><a href="https://www.pccomponentes.com" target="_blank">PCComponentes</a></li>
         <img src="pccomponentes.WEBP" alt="logo de la tienda pccomponentes">
-        <li><a href="https://www.amazon.es/s?k=ordenadores" target="_blank">Amazon España</a></li>
+        <li ><a href="https://www.amazon.es/s?k=ordenadores" target="_blank">Amazon España</a></li>
         <img src="Amazon.WEBP" alt="logo de amazon">
         <li><a href="https://www.mediamarkt.es" target="_blank">MediaMarkt</a></li>
         <img src="mediamark.WEBP" alt="logo de mediamarkt">
@@ -445,7 +445,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer role="">
     <h3>Enlaces</h3>
     <P><a href="https://paulasarnago.github.io">Accesorios para tu mascota</a></P>
     <p><a href="https://jpb100419.github.io">Juegos para tu nueva PC</a></p>
@@ -456,9 +456,4 @@
 </body>
 
 </html>
-
-
-
-
-
 

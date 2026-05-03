@@ -11,7 +11,14 @@ body {
   line-height: 1.6;
   min-height: 100vh;
 }
-
+body>a{
+  position: absolute;
+  left: -1000px;
+  color: white;
+}
+body>a:focus{
+  position: static;
+}
 
 header {
   background: linear-gradient(90deg, #ff0080, #7928ca, #ff0080);
